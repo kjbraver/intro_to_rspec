@@ -42,7 +42,7 @@ describe Book do
           @book.title = "to kill a mockingbird"
           expect(@book.title).to eq("To Kill a Mockingbird")
         end
-
+        
         specify 'an' do
           @book.title = "to eat an apple a day"
           expect(@book.title).to eq("To Eat an Apple a Day")

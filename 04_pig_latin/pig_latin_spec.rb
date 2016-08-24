@@ -65,8 +65,14 @@ describe "#translate" do
     expect(s).to eq("ethay ickquay ownbray oxfay")
   end
 
-  # Test-driving bonus:
-  # * write a test asserting that capitalized words are still capitalized (but with a different initial capital letter, of course)
-  # * retain the punctuation from the original phrase
+  it "maintains capitalization of words" do
+    s = translate("He ran Very quickly")
+    expect(s).to eq("Ehay anray Eryvay icklyquay")
+  end
+
+  xit "maintains proper punctuation" do
+    s = translate("If I go, then I will have gone!")
+    expect(s).to eq("Ifay Iay ogay, enthay Iay illway avehay onegay!")
+  end
 
 end
