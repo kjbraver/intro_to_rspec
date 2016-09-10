@@ -1,7 +1,7 @@
 def hello
-	p "Hello!"
+  p "Hello!"
 end
 
 def greet(name)
-	p "Hello, #{name}!"
+  p "Hello, #{name}!"
 end
